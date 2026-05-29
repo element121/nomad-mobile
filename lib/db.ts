@@ -13,6 +13,7 @@ import {
 } from 'drizzle-orm/pg-core';
 import { count, eq, ilike } from 'drizzle-orm';
 import { createInsertSchema } from 'drizzle-zod';
+import { use } from 'react';
 
 export const db = drizzle(neon(process.env.POSTGRES_URL!));
 

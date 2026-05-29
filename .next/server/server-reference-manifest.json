@@ -1,0 +1,43 @@
+{
+  "node": {
+    "4008ceb7d03278be3aa105a0693bd55aa523656734": {
+      "workers": {
+        "app/(dashboard)/page": {
+          "moduleId": "[project]/.next-internal/server/app/(dashboard)/page/actions.js { ACTIONS_MODULE0 => \"[project]/app/(dashboard)/user.tsx [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/app/(dashboard)/actions.ts [app-rsc] (ecmascript)\" } [app-rsc] (ecmascript)",
+          "async": false
+        },
+        "app/(dashboard)/numbers/page": {
+          "moduleId": "[project]/.next-internal/server/app/(dashboard)/numbers/page/actions.js { ACTIONS_MODULE0 => \"[project]/app/(dashboard)/user.tsx [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/app/(dashboard)/actions.ts [app-rsc] (ecmascript)\" } [app-rsc] (ecmascript)",
+          "async": false
+        }
+      },
+      "layer": {
+        "app/(dashboard)/page": "action-browser",
+        "app/(dashboard)/numbers/page": "action-browser"
+      }
+    },
+    "0063e3e1bec20618b37154a151abea622ac17b4663": {
+      "workers": {
+        "app/(dashboard)/page": {
+          "moduleId": "[project]/.next-internal/server/app/(dashboard)/page/actions.js { ACTIONS_MODULE0 => \"[project]/app/(dashboard)/user.tsx [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/app/(dashboard)/actions.ts [app-rsc] (ecmascript)\" } [app-rsc] (ecmascript)",
+          "async": false
+        },
+        "app/(dashboard)/customers/page": {
+          "moduleId": "[project]/.next-internal/server/app/(dashboard)/customers/page/actions.js { ACTIONS_MODULE0 => \"[project]/app/(dashboard)/user.tsx [app-rsc] (ecmascript)\" } [app-rsc] (ecmascript)",
+          "async": false
+        },
+        "app/(dashboard)/numbers/page": {
+          "moduleId": "[project]/.next-internal/server/app/(dashboard)/numbers/page/actions.js { ACTIONS_MODULE0 => \"[project]/app/(dashboard)/user.tsx [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/app/(dashboard)/actions.ts [app-rsc] (ecmascript)\" } [app-rsc] (ecmascript)",
+          "async": false
+        }
+      },
+      "layer": {
+        "app/(dashboard)/page": "rsc",
+        "app/(dashboard)/customers/page": "rsc",
+        "app/(dashboard)/numbers/page": "rsc"
+      }
+    }
+  },
+  "edge": {},
+  "encryptionKey": "mLrBtnJseR1OAOBWc/BbzDXFEqPd7RnYDOVySvxDd6o="
+}
