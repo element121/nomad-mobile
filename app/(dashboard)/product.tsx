@@ -1,19 +1,19 @@
-import Image from 'next/image';
-import { Badge } from '@/components/ui/badge';
-import { Button } from '@/components/ui/button';
+import Image from "next/image";
+import { Badge } from "@/components/ui/badge";
+import { Button } from "@/components/ui/button";
 import {
   DropdownMenu,
   DropdownMenuContent,
   DropdownMenuItem,
   DropdownMenuLabel,
-  DropdownMenuTrigger
-} from '@/components/ui/dropdown-menu';
-import { MoreHorizontal } from 'lucide-react';
-import { TableCell, TableRow } from '@/components/ui/table';
-import { SelectNumbers } from '@/lib/db';
-import { deleteProduct } from './actions';
+  DropdownMenuTrigger,
+} from "@/components/ui/dropdown-menu";
+import { MoreHorizontal } from "lucide-react";
+import { TableCell, TableRow } from "@/components/ui/table";
+import { SelectProduct } from "@/lib/db";
+import { deleteProduct } from "./actions";
 
-export function Product({ product }: { product: SelectNumbers }) {
+export function Product({ product }: { product: SelectProduct }) {
   return (
     <TableRow>
       <TableCell className="hidden sm:table-cell">
@@ -34,7 +34,7 @@ export function Product({ product }: { product: SelectNumbers }) {
       <TableCell className="hidden md:table-cell">{`$${product.price}`}</TableCell>
       <TableCell className="hidden md:table-cell">{product.stock}</TableCell>
       <TableCell className="hidden md:table-cell">
-        {product.availableAt.toLocaleDateString('en-US')}
+        {product.availableAt.toLocaleDateString("en-US")}
       </TableCell>
       <TableCell>
         <DropdownMenu>

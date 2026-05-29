@@ -1,32 +1,32 @@
-'use client';
+"use client";
 
 import {
   TableHead,
   TableRow,
   TableHeader,
   TableBody,
-  Table
-} from '@/components/ui/table';
+  Table,
+} from "@/components/ui/table";
 import {
   Card,
   CardContent,
   CardDescription,
   CardFooter,
   CardHeader,
-  CardTitle
-} from '@/components/ui/card';
-import { Product } from './product';
-import { SelectNumbers } from '@/lib/db';
-import { useRouter } from 'next/navigation';
-import { ChevronLeft, ChevronRight } from 'lucide-react';
-import { Button } from '@/components/ui/button';
+  CardTitle,
+} from "@/components/ui/card";
+import { Product } from "./product";
+import { SelectProduct } from "@/lib/db";
+import { useRouter } from "next/navigation";
+import { ChevronLeft, ChevronRight } from "lucide-react";
+import { Button } from "@/components/ui/button";
 
 export function ProductsTable({
   products,
   offset,
-  totalProducts
+  totalProducts,
 }: {
-  products: SelectNumbers[];
+  products: SelectProduct[];
   offset: number;
   totalProducts: number;
 }) {
@@ -78,14 +78,14 @@ export function ProductsTable({
       <CardFooter>
         <form className="flex items-center w-full justify-between">
           <div className="text-xs text-muted-foreground">
-            Showing{' '}
+            Showing{" "}
             <strong>
               {Math.max(
                 0,
-                Math.min(offset - productsPerPage, totalProducts) + 1
+                Math.min(offset - productsPerPage, totalProducts) + 1,
               )}
               -{offset}
-            </strong>{' '}
+            </strong>{" "}
             of <strong>{totalProducts}</strong> products
           </div>
           <div className="flex">
