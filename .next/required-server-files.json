@@ -175,7 +175,6 @@
       "imgOptTimeoutInSeconds": 7,
       "imgOptMaxInputPixels": 268402689,
       "imgOptSequentialRead": null,
-      "imgOptSkipMetadata": null,
       "isrFlushToDisk": true,
       "workerThreads": false,
       "optimizeCss": false,
@@ -326,6 +325,6 @@
     ".next\\required-server-files.json"
   ],
   "ignore": [
-    "node_modules\\.pnpm\\next@15.5.18_@babel+core@7._f72f9866c3b3560cb234326b00906372\\node_modules\\next\\dist\\compiled\\@ampproject\\toolbox-optimizer\\**\\*"
+    "node_modules\\.pnpm\\next@15.5.29_@babel+core@7._b681887c63f69fa48c49dacc38f707a4\\node_modules\\next\\dist\\compiled\\@ampproject\\toolbox-optimizer\\**\\*"
   ]
 }
